@@ -1,5 +1,13 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="B_day_of_week" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/day_of_week_button</item>
+    </style>
 
+    <style name="B_week" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/week_button</item>
+    </style>
+    
+    <color name="red">#FF0000</color>
 </resources>

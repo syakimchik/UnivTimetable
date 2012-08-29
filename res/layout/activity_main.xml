@@ -1,14 +1,204 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:background="@drawable/myshape"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="horizontal" >
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/mButtonDay"
+            style="@style/B_day_of_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/mButtonWeek"
+            style="@style/B_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/week"
+            android:textSize="18dp" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize = "17dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        
+        <TextView
+	        android:id="@+id/time1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentLeft="true"
+	        android:textSize = "17dp"/>
+        
+        <TextView 
+            android:id="@+id/type1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:textSize = "17dp"
+	        android:layout_marginRight="5dp"/>
+        
+        <TextView
+	        android:id="@+id/audience1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize = "17dp"
+	        android:layout_alignRight="@id/type1"
+	        android:layout_marginRight="45dp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize = "17dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        
+        <TextView
+	        android:id="@+id/time2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentLeft="true"
+	        android:textSize = "17dp"/>
+        
+        <TextView 
+            android:id="@+id/type2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:textSize = "17dp"
+	        android:layout_marginRight="5dp"/>
+        
+        <TextView
+	        android:id="@+id/audience2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize = "17dp"
+	        android:layout_alignRight="@id/type2"
+	        android:layout_marginRight="45dp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize = "17dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        
+        <TextView
+	        android:id="@+id/time3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentLeft="true"
+	        android:textSize = "17dp"/>
+        
+        <TextView 
+            android:id="@+id/type3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:textSize = "17dp"
+	        android:layout_marginRight="5dp"/>
+        
+        <TextView
+	        android:id="@+id/audience3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize = "17dp"
+	        android:layout_alignRight="@id/type3"
+	        android:layout_marginRight="45dp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/subject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize = "17dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        
+        <TextView
+	        android:id="@+id/time4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentLeft="true"
+	        android:textSize = "17dp"/>
+        
+        <TextView 
+            android:id="@+id/type4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:textSize = "17dp"
+	        android:layout_marginRight="5dp"/>
+        
+        <TextView
+	        android:id="@+id/audience4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize = "17dp"
+	        android:layout_alignRight="@id/type4"
+	        android:layout_marginRight="45dp"/>
+        
+    </RelativeLayout>
+    
+
+ </LinearLayout>
+
