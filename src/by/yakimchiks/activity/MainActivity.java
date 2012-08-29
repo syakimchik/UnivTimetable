@@ -21,14 +21,14 @@ public class MainActivity extends AppWidgetProvider
 	private static int day_of_week;
 	
 	@Override
-	  public void onUpdate(Context context, AppWidgetManager appWidgetManager,
-	      int[] appWidgetIds){ 
+	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
+			int[] appWidgetIds){ 
 		
 		Calendar now = new GregorianCalendar();
 		RemoteViews remoteView = new RemoteViews(context.getPackageName(), R.layout.activity_main);
 		day_of_week = now.get(Calendar.DAY_OF_WEEK);
 		remoteView.setTextViewText(R.id.mButtonDay, days[day_of_week]);
-		week = 35-now.get(Calendar.WEEK_OF_YEAR)+1;
+		week = getWeekOfMonth();
 		remoteView.setTextViewText(R.id.mButtonWeek, ""+week);
 		
 		String sql = null;
@@ -41,8 +41,7 @@ public class MainActivity extends AppWidgetProvider
 		mCursor = TProvider.getMyQuery(sql);
 		int counter = 1;
 		while (mCursor.moveToNext())
-	    {
-	        // process them as you want
+	    { 
 			if(counter==1){
 				remoteView.setTextViewText(R.id.subject1, mCursor.getString(0));
 				remoteView.setTextViewText(R.id.time1, mCursor.getString(1)+"-"+mCursor.getString(2));
@@ -73,17 +72,12 @@ public class MainActivity extends AppWidgetProvider
 		appWidgetManager.updateAppWidget(appWidgetIds, remoteView);
 	}
 	
-	/*
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
-    */
+	private int getWeekOfMonth(){
+		Calendar now = new GregorianCalendar();
+		int w = 35-now.get(Calendar.WEEK_OF_YEAR)+1;
+		while(w>4){
+			w-=4;
+		}
+		return w;
+	}
 }

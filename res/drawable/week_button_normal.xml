@@ -8,7 +8,7 @@
         android:type="linear"/>
     <padding
         android:bottom="4px"
-        android:left="13px"
-        android:right="13px"
+        android:left="12px"
+        android:right="12px"
         android:top="4px" />
 </shape>

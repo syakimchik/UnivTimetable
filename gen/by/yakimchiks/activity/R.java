@@ -11,21 +11,21 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int Red4=0x7f070001;
         public static final int red=0x7f070000;
     }
     public static final class drawable {
-        public static final int black_background=0x7f020000;
-        public static final int day_of_week_button=0x7f020001;
-        public static final int day_of_week_button_focused=0x7f020002;
-        public static final int day_of_week_button_normal=0x7f020003;
-        public static final int day_of_week_button_pressed=0x7f020004;
-        public static final int ic_action_search=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int myshape=0x7f020007;
-        public static final int week_button=0x7f020008;
-        public static final int week_button_focused=0x7f020009;
-        public static final int week_button_normal=0x7f02000a;
-        public static final int week_button_pressed=0x7f02000b;
+        public static final int day_of_week_button=0x7f020000;
+        public static final int day_of_week_button_focused=0x7f020001;
+        public static final int day_of_week_button_normal=0x7f020002;
+        public static final int day_of_week_button_pressed=0x7f020003;
+        public static final int ic_action_search=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int myshape=0x7f020006;
+        public static final int week_button=0x7f020007;
+        public static final int week_button_focused=0x7f020008;
+        public static final int week_button_normal=0x7f020009;
+        public static final int week_button_pressed=0x7f02000a;
     }
     public static final class id {
         public static final int audience1=0x7f090006;
@@ -60,7 +60,9 @@ public final class R {
         public static final int day=0x7f050004;
         public static final int hello_world=0x7f050001;
         public static final int menu_settings=0x7f050002;
+        public static final int t_week=0x7f050007;
         public static final int title_activity_main=0x7f050003;
+        public static final int today=0x7f050006;
         public static final int week=0x7f050005;
     }
     public static final class style {

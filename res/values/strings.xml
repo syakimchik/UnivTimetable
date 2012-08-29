@@ -6,5 +6,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="day">Пн</string>
     <string name="week">1</string>
+    <string name="today">Сегодня:</string>
+    <string name="t_week">Неделя:</string>
 
 </resources>
