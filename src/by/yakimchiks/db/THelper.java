@@ -177,7 +177,7 @@ public class THelper extends SQLiteOpenHelper implements BaseColumns{
 		db.insert("DayOfWeek", "Day", dayValues);
 		
 		db.execSQL("CREATE TABLE UnivTimetable (ID INTEGER PRIMARY KEY, Time_ID INTEGER, " +
-				"Subject_ID INTEGER, Audience_ID INTEGER, Type_ID INTEGER, PairInDay INTEGER, " +
+				"Subject_ID INTEGER, Audience_ID INTEGER, Type_ID INTEGER, " +
 				"Week INTEGER, DayOfWeek_ID INTEGER);");
 		
 		ContentValues allValues = new ContentValues();
@@ -186,7 +186,6 @@ public class THelper extends SQLiteOpenHelper implements BaseColumns{
 		allValues.put("Subject_ID", "10");
 		allValues.put("Audience_ID", "14");
 		allValues.put("Type_ID", "5");
-		allValues.put("PairInDay", "1");
 		allValues.put("Week", "1");
 		allValues.put("DayOfWeek_ID", "4");
 		db.insert("UnivTimetable", null, allValues);
@@ -195,7 +194,6 @@ public class THelper extends SQLiteOpenHelper implements BaseColumns{
 		allValues.put("Subject_ID", "10");
 		allValues.put("Audience_ID", "14");
 		allValues.put("Type_ID", "5");
-		allValues.put("PairInDay", "2");
 		allValues.put("Week", "1");
 		allValues.put("DayOfWeek_ID", "4");
 		db.insert("UnivTimetable", null, allValues);
@@ -204,7 +202,6 @@ public class THelper extends SQLiteOpenHelper implements BaseColumns{
 		allValues.put("Subject_ID", "10");
 		allValues.put("Audience_ID", "14");
 		allValues.put("Type_ID", "5");
-		allValues.put("PairInDay", "3");
 		allValues.put("Week", "1");
 		allValues.put("DayOfWeek_ID", "4");
 		db.insert("UnivTimetable", null, allValues);
@@ -213,10 +210,107 @@ public class THelper extends SQLiteOpenHelper implements BaseColumns{
 		allValues.put("Subject_ID", "10");
 		allValues.put("Audience_ID", "14");
 		allValues.put("Type_ID", "5");
-		allValues.put("PairInDay", "4");
 		allValues.put("Week", "1");
 		allValues.put("DayOfWeek_ID", "4");
 		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "1");
+		allValues.put("Subject_ID", "7");
+		allValues.put("Audience_ID", "12");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "1");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "1");
+		allValues.put("Subject_ID", "7");
+		allValues.put("Audience_ID", "12");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "3");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "1");
+		allValues.put("Subject_ID", "5");
+		allValues.put("Audience_ID", "3");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "2");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "1");
+		allValues.put("Subject_ID", "5");
+		allValues.put("Audience_ID", "3");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "4");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "2");
+		allValues.put("Subject_ID", "5");
+		allValues.put("Audience_ID", "3");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "2");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "1");
+		allValues.put("Subject_ID", "5");
+		allValues.put("Audience_ID", "3");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "4");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "2");
+		allValues.put("Subject_ID", "3");
+		allValues.put("Audience_ID", "13");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "1");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "2");
+		allValues.put("Subject_ID", "3");
+		allValues.put("Audience_ID", "13");
+		allValues.put("Type_ID", "2");
+		allValues.put("Week", "3");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "3");
+		allValues.put("Subject_ID", "3");
+		allValues.put("Audience_ID", "6");
+		allValues.put("Type_ID", "3");
+		allValues.put("Week", "2");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "3");
+		allValues.put("Subject_ID", "3");
+		allValues.put("Audience_ID", "6");
+		allValues.put("Type_ID", "3");
+		allValues.put("Week", "4");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "4");
+		allValues.put("Subject_ID", "9");
+		allValues.put("Audience_ID", "6");
+		allValues.put("Type_ID", "4");
+		allValues.put("Week", "2");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		allValues.put("Time_ID", "4");
+		allValues.put("Subject_ID", "9");
+		allValues.put("Audience_ID", "6");
+		allValues.put("Type_ID", "4");
+		allValues.put("Week", "4");
+		allValues.put("DayOfWeek_ID", "5");
+		db.insert("UnivTimetable", null, allValues);
+		
+		
 	} 
 
 	@Override

@@ -7,8 +7,8 @@
         android:startColor="#7FA40E"
         android:type="linear"/>
     <padding
-        android:bottom="4px"
+        android:bottom="3px"
         android:left="12px"
         android:right="12px"
-        android:top="4px" />
+        android:top="3px" />
 </shape>
