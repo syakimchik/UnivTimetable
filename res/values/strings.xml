@@ -8,5 +8,6 @@
     <string name="week">1</string>
     <string name="today">Сегодня:</string>
     <string name="t_week">Неделя:</string>
+    <string name="update">Обновить</string>
 
 </resources>

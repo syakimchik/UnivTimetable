@@ -40,7 +40,7 @@ public final class R {
         public static final int layout=0x7f090000;
         public static final int mButtonDay=0x7f090001;
         public static final int mButtonWeek=0x7f090002;
-        public static final int menu_settings=0x7f090013;
+        public static final int menu_settings=0x7f090014;
         public static final int subject1=0x7f090003;
         public static final int subject2=0x7f090007;
         public static final int subject3=0x7f09000b;
@@ -53,6 +53,7 @@ public final class R {
         public static final int type2=0x7f090009;
         public static final int type3=0x7f09000d;
         public static final int type4=0x7f090011;
+        public static final int update=0x7f090013;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -68,6 +69,7 @@ public final class R {
         public static final int t_week=0x7f050007;
         public static final int title_activity_main=0x7f050003;
         public static final int today=0x7f050006;
+        public static final int update=0x7f050008;
         public static final int week=0x7f050005;
     }
     public static final class style {
